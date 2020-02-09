@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		062F86270C9DB43DCFAE9D80 /* Pods_WikiSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316F9251C75C166FC93A875A /* Pods_WikiSearch.framework */; };
 		292B173623EFF05A0057128F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B173523EFF05A0057128F /* AppDelegate.swift */; };
 		292B173823EFF05A0057128F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B173723EFF05A0057128F /* ViewController.swift */; };
 		292B173B23EFF05A0057128F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292B173923EFF05A0057128F /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27D6D21C3066453CD73CEF6D /* Pods-WikiSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiSearch.release.xcconfig"; path = "Target Support Files/Pods-WikiSearch/Pods-WikiSearch.release.xcconfig"; sourceTree = "<group>"; };
 		292B173223EFF05A0057128F /* WikiSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		292B173523EFF05A0057128F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		292B173723EFF05A0057128F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		292B173C23EFF05B0057128F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		292B173F23EFF05B0057128F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		292B174123EFF05B0057128F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		316F9251C75C166FC93A875A /* Pods_WikiSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikiSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF20C6866F8391FC55C7E46D /* Pods-WikiSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiSearch.debug.xcconfig"; path = "Target Support Files/Pods-WikiSearch/Pods-WikiSearch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062F86270C9DB43DCFAE9D80 /* Pods_WikiSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		118B67194B196EFD5F87EB96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				316F9251C75C166FC93A875A /* Pods_WikiSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		292B172923EFF05A0057128F = {
 			isa = PBXGroup;
 			children = (
 				292B173423EFF05A0057128F /* WikiSearch */,
 				292B173323EFF05A0057128F /* Products */,
+				3DB22431097F1D7A9837FFE1 /* Pods */,
+				118B67194B196EFD5F87EB96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = WikiSearch;
 			sourceTree = "<group>";
 		};
+		3DB22431097F1D7A9837FFE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF20C6866F8391FC55C7E46D /* Pods-WikiSearch.debug.xcconfig */,
+				27D6D21C3066453CD73CEF6D /* Pods-WikiSearch.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 292B174423EFF05B0057128F /* Build configuration list for PBXNativeTarget "WikiSearch" */;
 			buildPhases = (
+				B321F1B993D42FD9197F7E3C /* [CP] Check Pods Manifest.lock */,
 				292B172E23EFF05A0057128F /* Sources */,
 				292B172F23EFF05A0057128F /* Frameworks */,
 				292B173023EFF05A0057128F /* Resources */,
+				BDB65886F76F76403FC211CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B321F1B993D42FD9197F7E3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WikiSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDB65886F76F76403FC211CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WikiSearch/Pods-WikiSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WikiSearch/Pods-WikiSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WikiSearch/Pods-WikiSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		292B172E23EFF05A0057128F /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		292B174523EFF05B0057128F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF20C6866F8391FC55C7E46D /* Pods-WikiSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		292B174623EFF05B0057128F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27D6D21C3066453CD73CEF6D /* Pods-WikiSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
