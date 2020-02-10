@@ -15,6 +15,7 @@
 		292B174023EFF05B0057128F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292B173E23EFF05B0057128F /* LaunchScreen.storyboard */; };
 		292B175223F125BB0057128F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B175123F125BB0057128F /* CustomTableViewCell.swift */; };
 		292B175423F1284F0057128F /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B175323F1284F0057128F /* SearchResultsTableViewController.swift */; };
+		292B175623F1848B0057128F /* APIRequestFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B175523F1848B0057128F /* APIRequestFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		292B174123EFF05B0057128F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		292B175123F125BB0057128F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		292B175323F1284F0057128F /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
+		292B175523F1848B0057128F /* APIRequestFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestFetcher.swift; sourceTree = "<group>"; };
 		316F9251C75C166FC93A875A /* Pods_WikiSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikiSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF20C6866F8391FC55C7E46D /* Pods-WikiSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiSearch.debug.xcconfig"; path = "Target Support Files/Pods-WikiSearch/Pods-WikiSearch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 			children = (
 				292B174123EFF05B0057128F /* Info.plist */,
 				292B173523EFF05A0057128F /* AppDelegate.swift */,
+				292B175523F1848B0057128F /* APIRequestFetcher.swift */,
 				292B173723EFF05A0057128F /* ViewController.swift */,
 				292B175123F125BB0057128F /* CustomTableViewCell.swift */,
 				292B175323F1284F0057128F /* SearchResultsTableViewController.swift */,
@@ -211,6 +214,7 @@
 			files = (
 				292B175423F1284F0057128F /* SearchResultsTableViewController.swift in Sources */,
 				292B175223F125BB0057128F /* CustomTableViewCell.swift in Sources */,
+				292B175623F1848B0057128F /* APIRequestFetcher.swift in Sources */,
 				292B173823EFF05A0057128F /* ViewController.swift in Sources */,
 				292B173623EFF05A0057128F /* AppDelegate.swift in Sources */,
 			);
