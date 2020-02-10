@@ -13,7 +13,8 @@
 		292B173B23EFF05A0057128F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292B173923EFF05A0057128F /* Main.storyboard */; };
 		292B173D23EFF05B0057128F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292B173C23EFF05B0057128F /* Assets.xcassets */; };
 		292B174023EFF05B0057128F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292B173E23EFF05B0057128F /* LaunchScreen.storyboard */; };
-		292B174823F0711D0057128F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B174723F0711D0057128F /* CustomTableViewCell.swift */; };
+		292B175223F125BB0057128F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B175123F125BB0057128F /* CustomTableViewCell.swift */; };
+		292B175423F1284F0057128F /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B175323F1284F0057128F /* SearchResultsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		292B173C23EFF05B0057128F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		292B173F23EFF05B0057128F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		292B174123EFF05B0057128F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		292B174723F0711D0057128F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		292B175123F125BB0057128F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		292B175323F1284F0057128F /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
 		316F9251C75C166FC93A875A /* Pods_WikiSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikiSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF20C6866F8391FC55C7E46D /* Pods-WikiSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiSearch.debug.xcconfig"; path = "Target Support Files/Pods-WikiSearch/Pods-WikiSearch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,13 +73,14 @@
 		292B173423EFF05A0057128F /* WikiSearch */ = {
 			isa = PBXGroup;
 			children = (
+				292B174123EFF05B0057128F /* Info.plist */,
 				292B173523EFF05A0057128F /* AppDelegate.swift */,
 				292B173723EFF05A0057128F /* ViewController.swift */,
-				292B174723F0711D0057128F /* CustomTableViewCell.swift */,
-				292B173923EFF05A0057128F /* Main.storyboard */,
+				292B175123F125BB0057128F /* CustomTableViewCell.swift */,
+				292B175323F1284F0057128F /* SearchResultsTableViewController.swift */,
 				292B173C23EFF05B0057128F /* Assets.xcassets */,
 				292B173E23EFF05B0057128F /* LaunchScreen.storyboard */,
-				292B174123EFF05B0057128F /* Info.plist */,
+				292B173923EFF05A0057128F /* Main.storyboard */,
 			);
 			path = WikiSearch;
 			sourceTree = "<group>";
@@ -206,7 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				292B174823F0711D0057128F /* CustomTableViewCell.swift in Sources */,
+				292B175423F1284F0057128F /* SearchResultsTableViewController.swift in Sources */,
+				292B175223F125BB0057128F /* CustomTableViewCell.swift in Sources */,
 				292B173823EFF05A0057128F /* ViewController.swift in Sources */,
 				292B173623EFF05A0057128F /* AppDelegate.swift in Sources */,
 			);
